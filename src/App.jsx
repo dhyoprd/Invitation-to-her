@@ -14,10 +14,18 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
   const [page, setPage] = useState('welcome');
+  const musicRef = React.useRef(null);
+
+  const handleWelcomeNext = () => {
+    setPage('ask');
+    if (musicRef.current) {
+      musicRef.current.play();
+    }
+  };
 
   const renderPage = () => {
     switch (page) {
-      case 'welcome': return <Welcome onNext={() => setPage('ask')} />;
+      case 'welcome': return <Welcome onNext={handleWelcomeNext} />;
       case 'ask': return <Ask onYes={() => setPage('where')} />;
       case 'where': return <Where onNext={() => setPage('time')} />;
       case 'time': return <Time onNext={() => setPage('dresscode')} />;
@@ -31,7 +39,7 @@ function App() {
   return (
     <div className="app-container">
       <HeartBackground />
-      <MusicPlayer />
+      <MusicPlayer ref={musicRef} />
       <AnimatePresence mode="wait">
         <motion.div
           key={page}
