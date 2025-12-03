@@ -1,17 +1,33 @@
-# React + Vite
+# 💌 Project: The "Will You?" Invitation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A very special, digital letter written in code, just for her. This isn't just a website; it's the beginning of something beautiful. 💖
 
-Currently, two official plugins are available:
+## ✨ The Magic Inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Floating Hearts**: A background that floats with love (literally, using Framer Motion!).
+*   **The "No" Button**: It's a bit shy... try to click it and see what happens! (Spoiler: It knows "Yes" is the only right answer 😉).
+*   **Our Song**: Press the music note 🎵 to play our special soundtrack.
+*   **The Grand Plan**: A step-by-step reveal of our perfect date at **Jumeirah Akasa Bali**.
 
-## React Compiler
+## 🛠️ Built With Love (and Tech)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **React + Vite**: Fast and smooth, just like how this date will go.
+*   **Framer Motion**: Adding life, bounce, and smooth transitions to every interaction.
+*   **Canvas Confetti**: Because saying "Yes" deserves a celebration! 🎊
 
-## Expanding the ESLint configuration
+## 🚀 How to Open
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Invitation-to-her
+1.  **Install the love (dependencies)**:
+    ```bash
+    npm install
+    ```
+2.  **Start the magic**:
+    ```bash
+    npm run dev
+    ```
+3.  **Open the link** and get ready to smile!
+
+---
+
+*"Your presence is truly a gift."* 🎁
+*Made with ❤️ by Dhion*
