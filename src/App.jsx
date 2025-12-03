@@ -54,6 +54,18 @@ function App() {
           {renderPage()}
         </motion.div>
       </AnimatePresence>
+
+      <div style={{
+        marginTop: '20px',
+        fontSize: '0.9rem',
+        opacity: 0.8,
+        color: 'var(--color-text)',
+        fontStyle: 'italic',
+        zIndex: 10,
+        textShadow: '0 4px 10px rgba(0,0,0,0.2)'
+      }}>
+        Handwritten by Dhyo for Gek Indy with love ❤️
+      </div>
     </div>
   );
 }
