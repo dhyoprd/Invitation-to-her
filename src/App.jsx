@@ -4,7 +4,7 @@ import HeartBackground from './components/HeartBackground';
 import MusicPlayer from './components/MusicPlayer';
 import Welcome from './pages/Welcome';
 import Ask from './pages/Ask';
-import Success from './pages/Success'; // Keeping this as a transition or removing if not needed, but user flow implies direct sequence
+import Success from './pages/Success';
 import Where from './pages/Where';
 import Time from './pages/Time';
 import Dresscode from './pages/Dresscode';

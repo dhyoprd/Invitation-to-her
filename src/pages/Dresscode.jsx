@@ -16,7 +16,7 @@ const Dresscode = ({ onNext }) => {
                         width: '60px',
                         height: '60px',
                         borderRadius: '50%',
-                        background: '#89CFF0', // Baby Blue
+                        background: '#89CFF0',
                         boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
                     }}></div>
                     <span style={{ fontSize: '0.9rem' }}>Top</span>
@@ -27,7 +27,7 @@ const Dresscode = ({ onNext }) => {
                         width: '60px',
                         height: '60px',
                         borderRadius: '50%',
-                        background: '#FFFFFF', // White
+                        background: '#FFFFFF',
                         border: '1px solid #eee',
                         boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
                     }}></div>
