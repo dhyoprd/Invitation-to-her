@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   min-height: 100vh;
