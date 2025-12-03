@@ -2,12 +2,29 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const HeartBackground = () => {
+    const videoRef = React.useRef(null);
     // Create an array of 20 hearts with random properties
     const hearts = Array.from({ length: 20 });
 
+    React.useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.log("Video autoplay failed:", error);
+            });
+        }
+    }, []);
+
     return (
         <div className="heart-bg">
-            <video autoPlay loop muted playsInline className="video-bg">
+            <video
+                ref={videoRef}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="video-bg"
+                preload="auto"
+            >
                 <source src="/background.mp4" type="video/mp4" />
             </video>
 
