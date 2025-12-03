@@ -6,9 +6,19 @@ const Ask = ({ onYes }) => {
     const [noCount, setNoCount] = useState(0);
     const [yesScale, setYesScale] = useState(1);
 
+    const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
+
     const handleNoClick = () => {
         setNoCount(noCount + 1);
-        setYesScale(yesScale + 0.2); // Make Yes button bigger
+        setYesScale(yesScale + 0.2);
+    };
+
+    const handleNoHover = () => {
+        const x = Math.random() * 200 - 100; // Random x between -100 and 100
+        const y = Math.random() * 200 - 100; // Random y between -100 and 100
+        setNoPosition({ x, y });
+        setNoCount(noCount + 1);
+        setYesScale(yesScale + 0.2);
     };
 
     const getNoText = () => {
@@ -45,7 +55,7 @@ const Ask = ({ onYes }) => {
                     style={{ width: '150px', borderRadius: '1rem' }}
                 />
             </div>
-            <div className="buttons" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div className="buttons" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', position: 'relative' }}>
                 <motion.button
                     className="btn-yes"
                     onClick={onYes}
@@ -67,9 +77,10 @@ const Ask = ({ onYes }) => {
                 </motion.button>
                 <motion.button
                     className="btn-no"
+                    onMouseEnter={handleNoHover}
                     onClick={handleNoClick}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
+                    animate={{ x: noPosition.x, y: noPosition.y }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     style={{
                         padding: '1rem 2rem',
                         fontSize: '1.2rem',
@@ -77,6 +88,7 @@ const Ask = ({ onYes }) => {
                         background: '#e5e5e5',
                         color: '#555',
                         fontWeight: 'bold',
+                        position: 'relative',
                     }}
                 >
                     {getNoText()}

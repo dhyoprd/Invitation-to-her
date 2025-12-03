@@ -8,6 +8,8 @@ const Where = ({ onNext }) => {
             <h2 style={{ color: 'var(--color-primary)', marginBottom: '1rem' }}>Where? 📍</h2>
             <p style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>
                 Jumeirah Akasa Bali
+            </p><p style={{ fontSize: '1rem', fontStyle: 'italic', opacity: 0.8, marginBottom: '1rem' }}>
+                (semoga ngga hujan ya)
             </p>
             <div className="img-container" style={{ marginBottom: '1.5rem' }}>
                 <img

@@ -14,10 +14,10 @@ const Final = () => {
     return (
         <InvitationCard>
             <h1 style={{ color: 'var(--color-primary)', fontSize: '2.5rem', marginBottom: '1rem' }}>
-                Terimaaci yaa cantik sampai jumpa! ❤️
+                Terimaaci yaa cantik see youu! ❤️
             </h1>
             <p style={{ fontSize: '1.5rem', fontStyle: 'italic', opacity: 0.9 }}>
-                your presence is trully a gift
+                hihihihi gasabarr deh :D
             </p>
             <div style={{ marginTop: '2rem', fontSize: '3rem' }}>
                 🎁

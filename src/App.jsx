@@ -9,6 +9,7 @@ import Where from './pages/Where';
 import Time from './pages/Time';
 import Dresscode from './pages/Dresscode';
 import Activity from './pages/Activity';
+import Game from './pages/Game';
 import Final from './pages/Final';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -26,11 +27,12 @@ function App() {
   const renderPage = () => {
     switch (page) {
       case 'welcome': return <Welcome onNext={handleWelcomeNext} />;
-      case 'ask': return <Ask onYes={() => setPage('where')} />;
-      case 'where': return <Where onNext={() => setPage('time')} />;
-      case 'time': return <Time onNext={() => setPage('dresscode')} />;
+      case 'ask': return <Ask onYes={() => setPage('time')} />;
+      case 'time': return <Time onNext={() => setPage('where')} />;
+      case 'where': return <Where onNext={() => setPage('dresscode')} />;
       case 'dresscode': return <Dresscode onNext={() => setPage('activity')} />;
-      case 'activity': return <Activity onNext={() => setPage('final')} />;
+      case 'activity': return <Activity onNext={() => setPage('game')} />;
+      case 'game': return <Game onNext={() => setPage('final')} />;
       case 'final': return <Final />;
       default: return <Welcome onNext={() => setPage('ask')} />;
     }
