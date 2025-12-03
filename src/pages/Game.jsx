@@ -16,7 +16,7 @@ const Game = ({ onNext }) => {
         const interval = setInterval(() => {
             const newHeart = {
                 id: Date.now(),
-                x: Math.random() * 80 + 10, // 10% to 90% width
+                x: Math.random() * 80 + 10,
                 y: -10,
             };
             setHearts((prev) => [...prev, newHeart]);
